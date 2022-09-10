@@ -9,26 +9,24 @@
  */
 int main(void)
 {
-	int n1 = 0, n2;
-	while(n2 <= 9)
-	{
-		n2 = 0;
-		while(n2 <= 9)
-		{
-			if (n1 != n2 && n1 < n2)
-			{
-				putchar(n1 + 48);
-				putchar(n2 + 48);
+	int i, j;
 
-				if (n1 + n2 != 17)
+	for (i = '0'; i <= '9'; i++)
+	{
+		for (j = '0'; j <= '9'; j++)
+		{
+			if (j > i)
+			{
+				putchar(i * '0');
+				putchar(j * '0');
+				
+				if (i <= 8)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			++n2;
 		}
-		++n1;
 	}
 	putchar('\n');
 	return (0);
