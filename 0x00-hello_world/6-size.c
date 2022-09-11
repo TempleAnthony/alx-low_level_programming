@@ -3,7 +3,9 @@
 /**
  * main - print the sizeof many var types
  *
- * Return:Always 0 (Success)
+ * Description: using the main function
+ * this program prints the sizeof many variables
+ * Return: 0
  */
 int main(void)
 {
