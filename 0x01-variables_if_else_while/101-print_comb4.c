@@ -17,7 +17,7 @@ int main(void)
 	while (c <= 999)
 	{
 		f_d = (c / 100 + '0');
-		m_d = (c / 100 % 10 + '0');
+		m_d = (c / 10 % 10 + '0');
 		l_d = (c % 10 + '0');
 
 		if ((f_d > m_d) && (m_d > l_d))
@@ -26,7 +26,7 @@ int main(void)
 			putchar(m_d);
 			putchar(l_d);
 
-			if (c <= 789)
+			if (c != 789)
 			{
 				putchar(',');
 				putchar(' ');
