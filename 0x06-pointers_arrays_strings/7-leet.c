@@ -3,8 +3,7 @@
 /**
  * leet - leet encoder
  * @s: string to encode
- *
- * Return: address of a string
+ * Return: address of s
  */
 char *leet(char *s)
 {
