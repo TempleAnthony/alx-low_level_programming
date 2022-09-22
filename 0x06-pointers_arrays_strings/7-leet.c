@@ -6,9 +6,11 @@
  *
  * Return: address of s
  */
+
 char *leet(char *s)
 {
-	int i, j;
+	int i;
+	int j;
 	char a[] = "aAeEoOtTlL";
 	char b[] = "4433007711";
 
