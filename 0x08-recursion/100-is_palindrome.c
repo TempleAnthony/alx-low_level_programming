@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_palindrome - returns thr l if s is a palindrome
+ * is_palindrome - returns the 1 if s is a palindrome
  * @s: string to be checked
  *
  * Return: 1 if s is a palindrome, 0 otherwise
@@ -47,7 +47,7 @@ int _strlen_recursion(char *s)
 	if (*s != '\0')
 	{
 		sum++;
-		sum += _strlen_recursions(s + 1);
+		sum += _strlen_recursion(s + 1);
 	}
 	return (sum);
 }
